@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">myNotes</string>
+
+    <string name="action_save">Save</string>
+    <string name="msg_add_notes_tittle">Add Notes Tittle</string>
+    <string name="msg_add_notes_description">Add Notes Description</string>
+    <string name="action_delete_all">Delete All</string>
+</resources>

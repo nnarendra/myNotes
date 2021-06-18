@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_8"
+    android:layout_marginTop="@dimen/dp_8"
+    android:elevation="@dimen/dp_4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_note_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="TextView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_note_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_note_tittle"
+            tools:text="TextView" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_8"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_note_description">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:text="TextView1" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_delete_icon"
+                tools:text="TextView2" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_like"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_not_liked_icon"
+                tools:text="TextView3" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
